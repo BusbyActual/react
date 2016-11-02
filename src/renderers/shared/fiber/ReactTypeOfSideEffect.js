@@ -12,12 +12,12 @@
 
 'use strict';
 
-export type TypeOfSideEffect = 0 | 1 | 2 | 3 | 4;
+export type TypeOfSideEffect = 0 | 1 | 2 | 3 | 4 | 5 | 8;
 
 module.exports = {
-  NoEffect: 0,
-  Placement: 1,
-  Update: 2,
-  PlacementAndUpdate: 3,
-  Deletion: 4,
+  NoEffect: 0,           // 0b0000
+  Placement: 1,          // 0b0001
+  Update: 2,             // 0b0010
+  Deletion: 4,           // 0b0100
+  Callback: 8,           // 0b1000
 };
